@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  background-color: #eef4f7;
+}
+
+.app-heading {
+  font-family: 'Roboto';
+  color: #334155;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #52bbf0;
+}
+
+.places-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.place-container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 2px 1%;
+  background-color: #ffffff;
+}
+
+.place-details {
+  padding: 10px 10px;
+  font-family: 'Roboto';
+}
+.place-name {
+  color: #475569;
+}
+.description {
+  color: #64748b;
+}
+
+@media screen and (max-width: 992px) {
+  .place-container {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .places-container {
+    flex-wrap: wrap;
+  }
+  .place-container {
+    width: 40%;
+    font-size: 10px;
+    margin: 10px 5px;
+    font-family: 'Roboto';
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .app-container {
+    width: 100%;
+  }
+  .places-container {
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 10px;
+  }
+  .place-container {
+    width: 80%;
+    font-size: 10px;
+    margin: 10px 15px;
+    padding: 10px;
+    font-family: 'Roboto';
+  }
+
+  .place-container img {
+    position: relative;
+  }
+  .place-details {
+    padding: 5px;
+    margin: 2%;
+  }
+}
